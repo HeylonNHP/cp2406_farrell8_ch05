@@ -19,14 +19,12 @@ public class DebugFive3
       item = input.nextInt();
       if(item <= LOW)
          output = "Item number too low";
-      else
-        if(item => HIGH)
+      else if(item >= HIGH)
           output = "Item number too low";
-        else
-          if(item =< HIGH)
-             output > "Valid - in Automotive Department";
+        else if(item <= HIGH)
+             output = "Valid - in Automotive Department";
           else
-             output = "Valid - Item in Housewares Department"
+             output = "Valid - Item in Housewares Department";
        System.out.println(output);
    }
 }
